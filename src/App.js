@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 // import styled, { keyframes } from 'styled-components';
+import { Container } from 'reactstrap';
 import axios from "axios";
 import Character from "./components/Character";
 
@@ -46,12 +47,17 @@ const [people, setPeople] = useState([])
   }, [])
 
 return (
-    <div className="App">
-      <h1 className="Header">Characters</h1>
-      {people.map(character => (
-        <Character key={character.id} character={character}  propTwo={true} propThree={setPeople} />
-      ), [])}
-    </div>
+    <Container>
+      <div className="App">
+        <body>
+        <header>
+          <h1 className="Header">Characters</h1>{people.map(character => (
+             <Character key={character.id}   character={character}  propTwo={true} propThree={setPeople} />
+          ), [])}
+          </header>
+        </body>
+      </div>
+    </Container>
   )
 }
 

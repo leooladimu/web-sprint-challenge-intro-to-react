@@ -1,6 +1,19 @@
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 50%;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+li {
+  list-style-type: none;
+}
 .App {
   display: flex;
   justify-content: center;
+  flex-wrap: ;
   /* text-align: center; */
   flex-direction: column;
 }
@@ -8,4 +21,19 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+body {
+  font-family: Lato, sans-serif;
+  color: #443e3e;
+  text-shadow: 1px 1px 5px #fff;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* flex-direction: column; */
+  /* text-decoration: none; */
+}
 /* write your parent styles in here for your App.js */
+/* .Container {
+    display: flex;
+  justify-content: center;
+  /* text-align: center; */
+ 
